@@ -42,7 +42,7 @@ int main() {
 
 
   if (rules == "Y" || rules == "y") { //covers both Y and y. proud of this :3
-    cout << " \n" << "*************************************************************************\n" << "\n"<< "⦿ We will give you 4 opportunities to guess the number correctly.\n" << "⦿ The number will range from 0 to 99.\n" <<"⦿ Every correct guess gets you 1 point.\n⦿ You need 2 points to win.\n⦿ The number will change after every round. \n⦿ Hints will be offered.\n \n" ;
+    cout << " \n" << "*************************************************************************\n" << "\n"<< "⦿ We will give you 5 opportunities to guess the number correctly.\n" << "⦿ The number will range from 0 to 99.\n" <<"⦿ Every correct guess gets you 1 point.\n⦿ You need 2 points to win.\n⦿ The number will change after every round. \n⦿ Hints will be offered.\n \n" ;
   } else if (rules == "N" || rules == "n") {
   cout << "\n"<< "Too cool for rules... we like that.\n\n";
   }
@@ -115,10 +115,10 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
       } // 
       cout << "\n\n*************************************************************************\n\n";
       if (score == 2) {
-        cout <<  "Your current score is: " << score <<".\n" << "Congradulations! You won the game! you are a guessing champion!"; 
+        cout <<  "Your current score is: " << score <<".\n" << "Congradulations! You won the game! you are a guessing champion! Go play the lottery!"; 
       } else if (score <2) {
         cout << "Your current score is: " << score <<".\n";
-        cout << "This is your last chance! We will double the points so you can win big! Would you like to play the final round? (Y/N) ";
+        cout << "This is your last chance! We will double the points so you can win big! The number will change. Would you like to play the final round? (Y/N) ";
         cin >> rules; 
 
 
@@ -163,7 +163,7 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
 if (score <2) {
   cout << "Better luck next time! ";
 } else if (score >=2) {
-  cout << "Congradulations! You won the game! you are a guessing champion! \n\n"; 
+  cout << "Congradulations! You won the game! you are a guessing champion! Go Play the lottery! \n\n"; 
 }
 
 
