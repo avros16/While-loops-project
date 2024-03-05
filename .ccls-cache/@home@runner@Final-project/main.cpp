@@ -53,21 +53,21 @@ int main() {
   cout << "\n\n*************************************************************************\n\n";
 
   if (rules == "Y" || rules == "y") {
-    cout << "\n\U0001F340Good luck!\U0001F340\n\n";
+    cout << "\n\U0001F340 Good luck! \U0001F340\n\n";
     while (chances <5 && score <1) {
       chances++;
     cout << random_number;
     cout << "Guess the number: ";
     cin >> guess; 
-
+   cout << "\n";
     if (guess != random_number){
-      cout << "Nope, thats not it! Would you like a hint? (Y/N) ";
+      cout << "\U0001F6AB Nope, thats not it! Would you like a hint? (Y/N) ";
       cin >> rules;
           if (rules == "Y" || rules == "y") {
                 if (guess > random_number){
-                  cout << "Hint: Your guess is too high...\n\n";
+                  cout << "\U0001F50D Hint: Your guess is too high...\n\n";
                 } else if (guess < random_number) {
-                  cout << "Hint: Your guess is too low...\n\n";
+                  cout << "\U0001F50D Hint: Your guess is too low...\n\n";
                 }
 
           }
@@ -89,61 +89,61 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
     cout << "\n\n*************************************************************************\n";
 
     if (rules == "Y" || rules == "y") {
-      cout << "\n\U0001F340Good luck!\U0001F340\n\n";
+      cout << "\n\U0001F340 Good luck! \U0001F340\n\n";
       while (chances2 <5 && score <2) {
         chances2++;
-      //cout << random_number2;
+      cout << random_number2;
       cout << "Guess the number: ";
       cin >> guess; 
-
+      cout << "\n";
       if (guess != random_number2){
-        cout << "Nope, thats not it! Would you like a hint? (Y/N) ";
+        cout << "\U0001F6AB Nope, thats not it! Would you like a hint? (Y/N) ";
         cin >> rules;
             if (rules == "Y" || rules == "y") {
                   if (guess > random_number2){
-                    cout << "Hint: Your guess is too high...\n\n";
+                    cout << "\U0001F50D Hint: Your guess is too high...\n\n";
                   } else if (guess < random_number2) {
-                    cout << "Hint: Your guess is too low...\n\n";
+                    cout << "\U0001F50D Hint: Your guess is too low...\n\n";
                   }
 
             }
 
       } else if (guess == random_number2) {
-        cout << "\n \U00002705 Correct!\n\n";
+        cout << "\n \U00002705 Correct! \U00002705\n\n";
         score++;
         break;} 
       } // 
       cout << "\n\n*************************************************************************\n\n";
       if (score == 2) {
-        cout <<  "Your current score is: " << score <<".\n\n" << "Congradulations! You won the game! you are a guessing champion! Go play the lottery!"; 
+        cout <<  "Your current score is: " << score <<".\n\n" << "Congratulations! You won the game! you are a guessing champion! Go play the lottery!";
       } else if (score <2) {
         cout << "Your current score is: " << score <<".\n";
-        cout << "This is your last chance! We will double the points so you can win big! The number will change. Would you like to play the final round? (Y/N) ";
+        cout << "\U0001F6A7 This is your last chance! We will double the points so you can win big! The number will change. Would you like to play the final round? (Y/N) ";
         cin >> rules; 
         cout << "\n\n*************************************************************************\n";
 
         if (rules == "Y" || rules == "y") {
-          cout << "\n\U0001F340Good luck! \U0001F340\n\n";
+          cout << "\n\U0001F340 Good luck! \U0001F340\n\n";
           while (chances3 <5 && score <3) {
             chances3++;
           //cout << random_number3;
           cout << "Guess the number: ";
           cin >> guess; 
-
+          cout << "\n";
           if (guess != random_number3){
             cout << "Nope, thats not it! Would you like a hint? (Y/N) ";
             cin >> rules;
                 if (rules == "Y" || rules == "y") {
                       if (guess > random_number3){
-                        cout << "Hint: Your guess is too high...\n\n";
+                        cout << "\U0001F50D Hint: Your guess is too high...\n\n";
                       } else if (guess < random_number3) {
-                        cout << "Hint: Your guess is too low...\n\n";
+                        cout << "\U0001F50D Hint: Your guess is too low...\n\n";
                       }
 
                 }
 
           } else if (guess == random_number3) {
-            cout << "Correct!\n\n";
+            cout << "\n \U00002705 Correct!\U00002705\n\n";
             score++;
             score++;
             break;} 
@@ -163,7 +163,7 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
 if (score <2) {
   cout << "Better luck next time! ";
 } else if (score >=2) {
-  cout << "Congratulations! You won the game! you are a guessing champion! Go Play the lottery! \n\n"; 
+  cout << "\n\U0001F973\U0001F44F Congratulations! You won the game! you are a guessing champion! Go Play the lottery! \n\n"; 
 }
 
 
