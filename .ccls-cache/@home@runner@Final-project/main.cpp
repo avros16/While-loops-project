@@ -56,7 +56,7 @@ int main() {
     cout << "\n\U0001F340 Good luck! \U0001F340\n\n";
     while (chances <5 && score <1) {
       chances++;
-    cout << random_number;
+    //cout << random_number;
     cout << "Guess the number: ";
     cin >> guess; 
    cout << "\n";
@@ -92,7 +92,7 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
       cout << "\n\U0001F340 Good luck! \U0001F340\n\n";
       while (chances2 <5 && score <2) {
         chances2++;
-      cout << random_number2;
+      //cout << random_number2;
       cout << "Guess the number: ";
       cin >> guess; 
       cout << "\n";
@@ -117,8 +117,8 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
       if (score == 2) {
         cout <<  "Your current score is: " << score <<".\n\n" << "Congratulations! You won the game! you are a guessing champion! Go play the lottery!";
       } else if (score <2) {
-        cout << "Your current score is: " << score <<".\n";
-        cout << "\U0001F6A7 This is your last chance! We will double the points so you can win big! The number will change. Would you like to play the final round? (Y/N) ";
+        cout << "Your current score is: " << score <<".\n\n";
+        cout << "\U0001F6A7 This is your last chance! \U0001F6A7 \n  We will double the points so you can win big! The number will change. Would you like to play the final round? (Y/N) ";
         cin >> rules; 
         cout << "\n\n*************************************************************************\n";
 
@@ -143,7 +143,7 @@ cout << "You need 2 points to win. Do you wanna keep playing? The number will ch
                 }
 
           } else if (guess == random_number3) {
-            cout << "\n \U00002705 Correct!\U00002705\n\n";
+            cout << "\n \U00002705 Correct! \U00002705\n\n";
             score++;
             score++;
             break;} 
