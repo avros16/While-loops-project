@@ -1,6 +1,6 @@
 #include <iostream>
 #include <random>
-//Ana Rosario. Terry Grant, Henry Zhumi
+//Ana Rosario
 
 int main() {
 
